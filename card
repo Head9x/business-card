@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+reset="$(tput sgr0)"
+bold="$(tput bold)"
+dim="$(tput dim)"
+#blink="$(tput blink)"
+underline="$(tput smul)"
+#end_underline="$(tput rmul)"
+#reverse="$(tput rev)"
+hidden="$(tput invis)"
+#black="$(tput setaf 0)"
+red="$(tput setaf 1)"
+green="$(tput setaf 2)"
+yellow="$(tput setaf 3)"
+blue="$(tput setaf 4)"
+magenta="$(tput setaf 5)"
+cyan="$(tput setaf 6)"
+white="$(tput setaf 7)"
+#default="$(tput setaf 9)"
+#bg_black="$(tput setab 0)"
+#bg_red="$(tput setab 1)"
+#bg_green="$(tput setab 2)"
+#bg_yellow="$(tput setab 3)"
+#bg_blue="$(tput setab 4)"
+#bg_magenta="$(tput setab 5)"
+#bg_cyan="$(tput setab 6)"
+#bg_white="$(tput setab 7)"
+#bg_default="$(tput setab 9)"
+
+cat <<EOF
+${cyan}╭───────────────────────────────────────────────────────╮
+${cyan}│                                                       │
+${cyan}│${reset}           ${bold}${cyan}Frederik Tranberg${reset}                           ${cyan}│
+${cyan}│                                                       │
+${cyan}│${reset}     ${underline}${bold}Email:${reset}  ${magenta}fredecontact@caf-tranberg.dk              ${cyan}│
+${cyan}│${reset}       ${underline}${bold}Web:${reset}  ${dim}https://www.${reset}${cyan}Head9x.dk                     ${cyan}|
+${cyan}│                                                       │
+${cyan}│                                                       │
+${cyan}│${reset}    ${underline}${bold}GitHub:${reset}  ${dim}https://github.com/${reset}${green}Head9x                 ${cyan}│
+${cyan}│${reset}       ${underline}${bold}GPG:${reset}  ${dim}https://head9x.dk/${reset}${white}head9x.gpg              ${cyan}│
+${cyan}│                                                       │
+${cyan}│${reset}      ${underline}${bold}Card:${reset}  ${yellow}curl -sL https://git.io/JttlQ | sh        ${cyan}│
+${cyan}│                                                       │
+${cyan}╰───────────────────────────────────────────────────────╯
+EOF
